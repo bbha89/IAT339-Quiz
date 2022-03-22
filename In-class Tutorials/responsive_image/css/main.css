@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+	padding: 1rem;
+	font-family: Verdana, sans-serif;
+}
+
+p {
+	max-width: 36rem;
+}
+
+section {
+	margin-top: 6rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.grid {
+	display: grid;
+}
+
+
+@media (min-width: 75rem) {
+
+	.grid.two-col {
+		grid-template-columns: 1fr 1fr;
+	}
+
+}

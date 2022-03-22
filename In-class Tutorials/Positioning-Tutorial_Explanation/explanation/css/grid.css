@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+}
+
+
+.grid {
+	display: grid;
+}
+
+
+
+.grid.add-gutters {
+	grid-column-gap: 1rem;
+	grid-row-gap: 0.25rem;
+}
+
+
+
+/*
+	Because our navigation is now fixed and overlaps our content, we need to introduce some space at the top of our page to ensure that overlap doesn't occur. The simplest solution to this is to introduce 'padding-top' to the body element so all the content has some additional spacing (thereby avoiding the overlap).
+*/
+body {
+	padding-top: 8rem;
+}
+
+
+
+
+
+@media (min-width: 51.25rem) {
+	.grid.two-column, .grid.four-column {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-auto-flow: row;
+	}
+
+	/*
+		Using the same selector in the media queries, we can adjust the padding-top for the body tag as the page resizes.
+	*/
+	body {
+		padding-top: 4rem;
+	}
+
+}
+
+
+
+@media (min-width: 70rem) {
+	
+	.grid.four-column {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-auto-flow: row;
+	}
+
+	/*
+		Using the same selector in the media queries, we can adjust the padding-top for the body tag as the page resizes.
+	*/
+	body {
+		padding-top: 2rem;
+	}
+}

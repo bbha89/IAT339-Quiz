@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Responsive Images Demo</title>
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+
+	</head>
+
+	<body>
+
+		<h1>Responsive Images Demo</h1>
+
+		<p>As part of making your websites more 'responsive friendly', there are a couple of proposals for responsive images that were developed by the <a href="https://responsiveimages.org/" target="_blank">Responsive Images Community Group</a>. There is the &lt;picture&gt; element which allows for 'art direction' of an image by using multiple sources, as well as the "srcset" and "sizes" attributes which allow us to offer browsers a variety of image resolutions to choose from.</p>
+
+		<p>It is a good idea to take a look at <a href="http://caniuse.com/#search=srcset" target="_blank">how supported "srcset"</a> and <a href="http://caniuse.com/#search=picture" target="_blank">the &lt;picture&gt; element</a> are before use.</p>
+
+
+
+
+
+		<section id="srcset">
+
+			<h2>"srcset" Example</h2>
+
+			<div class="grid two-col">
+
+				
+				
+				<!--
+					We should always start with the img element regardless to support as many different devices and browsers as possible.
+				-->
+				<img src="img/Puppies_cropped-400.jpg" alt="A collection of Nova Scotia Duck-tolling Retriever puppies"
+				
+				srcset="img/Puppies_cropped-400.jpg 400w,
+					img/Puppies_cropped-1000.jpg 1000w,
+					img/Puppies_cropped-1600.jpg 1600w"
+				
+					sizes="
+					(mid-width: 75rem) 50vw,
+						100vw"
+
+				>
+				
+
+
+				<div><!-- This has been left purposefully blank --></div>
+
+			</div>
+
+
+
+		</section>
+
+
+
+
+		<section id="picture">
+
+			<h2>&lt;picture&gt; Example</h2>
+
+
+
+			<!--
+				We should always start with the img element regardless to support as many different devices and browsers as possible.
+				<img src="img/Puppies_cropped-400.jpg" alt="A collection of Nova Scotia Duck-tolling Retriever puppies">
+			-->
+
+			<picture>
+				<source srcset="img/Puppies-1000.jpg 1000w,
+				img/Puppies-2000.jpg 2000w,1
+				img/Puppies-3000.jpg 3000w" media="(min-width: 40rem)">
+
+				<img src="img/Puppies_cropped-400.jpg" alt="A collection of Nova Scotia Duck-tolling Retriever puppies"
+					
+				srcset="img/Puppies_cropped-400.jpg 400w,
+					img/Puppies_cropped-1000.jpg 1000w,
+					img/Puppies_cropped-1600.jpg 1600w"
+				
+				sizes="
+				(mid-width: 75rem) 50vw,
+					100vw"
+
+				>
+			</picture>
+		</section>
+
+
+
+	</body>
+
+</html>

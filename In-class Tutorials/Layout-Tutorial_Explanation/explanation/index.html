@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		
+		<!--
+			The <meta> element below is important to help change the size of our browser window to reflect the size of the device. It works as follows:
+
+				name="viewport" - this clarifies that we are declaring something about the viewport (aka browser window)
+				'width=device-width' - this specifies that the width of the viewport should be equal to the width of our device (important for mobile devices)
+				'initial-scale=1' - this ensures that our website renders not zoomed-in or zoomed-out, as we have designed it to be responsive.
+
+			If you would like more information on why we set this, I recommend reading this article - https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
+		-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>My Most Hideous Page Ever</title>
+
+		<link rel="stylesheet" href="css/normalize.css">	
+		<!-- 
+			Here we are linking up a separate stylesheet to manage our grid structures.
+		-->
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/main.css"> 
+		<link rel="stylesheet" href="css/fonts.css"> 
+
+
+	</head>
+
+	<body>
+
+		<h1>My Less Hideous Page</h1>
+
+		<p>
+			A robot is a <em>dangerous</em>, often humanoid, autonomous being that will take over soon. We must be vigilant. We must be wary. We must prepare to stop the robots from taking over. Transformers are here and are real. Robots such as Honda's <abbr title="Advanced Step in Innovative Mobility">ASIMO</abbr> is proof of that. They walk, and soon enough they will also be able to talk and drive us around. That is dangerous.
+		</p>
+
+
+		<!--
+					Below we have added a <div> element to act as a non-semantic HTML element to apply our grid styling to. Note that we have assigned three separate CSS classes to our element by separating them with spaces. In this case our <div> below has the CSS classes of: .grid and .four-column and .add-gutters
+		-->
+		<nav class="nav-main grid four-column add-gutters">
+
+			<!-- 
+				In the case of our grid, the child elements of the grid - in this case the <a> below that are the children of the <nav class="grid ..."> - are what form each 'cell' of the grid. If you need to place more than just a single element in a cell, then they need to be wrapped inside of another element. A good example of this is available below at line 75.
+			-->
+			<a href="#robot" class="nav-main-item">See a Robot</a>
+			<a href="#comments" class="nav-main-item bg1">Comment on Robots</a>
+			<a href="https://en.wikipedia.org/wiki/Robot" class="nav-main-item bg2">Robots (Wikipedia)</a>
+			<a href="https://www.shutterstock.com/search/robots?search_source=base_keyword" class="nav-main-item bg3">Robot Photos</a>
+		
+		</nav>
+
+		<section id="robot">
+		
+			<h2>See a Robot</h2>
+			
+			<!--
+				Below we have added a <div> element to act as a non-semantic HTML element to apply our grid styling to. Note that we have assigned three separate CSS classes to our element by separating them with spaces. In this case our <div> below has the CSS classes of: .grid and .two-column and .add-gutters
+			-->
+			<div class="grid two-column add-gutters">
+		
+				
+				
+				<!-- 
+					In the case of our grid, the child elements of the grid - in this case the <figure> and <div> elements below that are the children of the <div class="grid ..."> - are what form each 'cell' of the grid. In the example below all the content that is inside of each element will fill one cell of our grid.
+				-->
+				<figure>
+
+					<img src="img/robot.jpg" alt="A toy robot with a menacing expression" height="1600" width="1063">
+					<figcaption>Beware of robots like this.</figcaption>
+
+				</figure> <!-- This is the end of the first column -->
+					
+				<!-- 
+					The <div class="column"> wraps all the content we want to appear in a column of our grid. The .column class has no CSS applied to it.
+				-->
+				<div class="column">
+					<h3>Links about robots:</h3>
+					<ol>
+
+						<li>
+							<a href="https://en.wikipedia.org/wiki/Robot" target="_blank">Wikipedia on Robots</a>
+						</li>
+						<li>
+							<a href="https://www.shutterstock.com/search/robots?search_source=base_keyword" target="_blank">Photos of robots</a>
+						</li>
+					</ol>
+				</div> <!-- This is the end of the second column -->
+
+
+			</div> <!-- This is the end of our grid -->
+
+
+
+			<h3>The code of how robots deal with humans:</h3>
+
+			<code>
+				# Human protocol<br>
+				robot.see("human", function(seen) {<br>
+				seen.destroy();<br>
+				});<br>
+			</code>
+
+			<h3>What the robot does as a result:</h3>
+
+			<samp>EXTERMINATE! EXTERMINATE! EXTERMINATE!</samp>
+
+		</section>
+
+
+		<section id="comments">
+
+			<h2>Comment on Robots</h2>
+			<p><strong>Commenting is currently closed.</strong></p>
+
+		</section>
+
+
+	</body>
+</html>

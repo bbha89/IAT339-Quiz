@@ -1,0 +1,160 @@
+/*
+	Because we already have an existing class for our navigation, we can just select it.
+*/
+.nav-main {
+
+	/*
+		Using the position property we can specify that we want this element to be positioned differently then the default 'static' positioning.
+
+		In this case, fixed positioning 'fixes' the element to the page while you scroll.
+	*/
+	position: fixed;
+
+	/*
+		Only once we set the positioning of an element to a value other then 'static' can we use the top, right, bottom, and left properties. These properties define the distance of the element along those edges depending on what kind of positioning is set.
+
+		In this case, we are making sure our 'fixed' element is positioned zero pixels from the top, left, and right edges.
+	*/
+	top: 0;
+	right: 0;
+	left: 0;
+
+	/*
+		Because elements that appear later on our page have a positioning set, we have to use the z-index property to ensure that our fixed navigation does not get overlapped by them when we scroll. Higher values for z-index indicate a higher layer.
+	*/
+	z-index: 10;
+}
+
+/*
+	By setting a positioning for the .caption-inside element - in this case a <figure> - we can ensure that its child elements - <img> and <figcaption> - stay within the bounds of their parent when being positioned.
+
+	Position relative without any top, right, bottom, and left properties remains in the same spot as a statically positioned element.
+*/
+.caption-inside {
+	position: relative;
+}
+
+
+/*
+	A reminder that a space between the two selectors below '.caption-inside' and 'figcaption' indicates only 'figcaptions' that are children of '.caption-inside' elements will be styled as specified
+*/
+.caption-inside figcaption {
+
+	/*
+		Positioning an element as 'absolute' sets it to be positioned absolutely to the last parent element with a positioning set (other then static).
+
+		As <figcaption> is the child of .caption-inside, which is positioned relative, <figcaption> is then positioned absolutely to .caption-inside based on the top, right, bottom, and left values set.
+	*/
+	position: absolute;
+
+	/*
+		By setting a bottom value of 0.5rem, we are introducing a bit of space between the bottom edge of the caption and the image.
+	*/
+	bottom: 0.3rem;
+
+	padding: 0.25rem 0.5rem;
+	
+	/*
+		To help ensure that the content in our caption is readable, we can use a black background with some opacity and white text to increase the contrast.
+	*/
+	color: white;
+	background-color: rgba(0, 0, 0, 0.9);
+
+
+	/* 
+		By setting the width to 100% we can have it span the full width of the image.
+	*/
+	width: 100%;
+}
+
+
+
+
+
+body {
+	font-family: "Fira", Verdana, sans-serif;
+	margin: 1rem;
+	font-size: 1.25rem;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 2.25rem;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 1.6rem;
+	margin-bottom: 0;
+}
+
+p, ol, ul {
+	max-width: 40rem;
+}
+
+img {
+	height: auto; 
+	max-width: 100%;
+	border-width: 0.1rem;
+	border-style: solid;
+	border-color: black; 
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+a {
+	color: rgb(200,0,0);
+	transition-property: color;
+	transition-duration: 0.5s;
+}
+
+a:active, a:hover, a:focus {
+	color: rgb(50,0,0); 
+	text-decoration: none;
+}
+
+code, samp {
+	display: block;
+	background-color: rgb(230,230,230);
+	padding: 0.5rem;
+}
+
+.nav-main-item {
+	display: inline-block;
+	color: white;
+	background-color: rgb(250,100,75);
+	font-size: 1.5rem;
+	padding: 0.25rem 0.5rem;
+	text-decoration: none;
+
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+}
+
+.nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
+	color: white;
+	background-color: rgb(50,50,50);
+}
+
+.bg1 {
+	background-color: purple;
+}
+
+.bg2 {
+	background-color: green;
+}
+
+.bg3 {
+	background-color: blue;
+}

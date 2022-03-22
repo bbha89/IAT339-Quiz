@@ -1,0 +1,14 @@
+doctype html
+//- Attributes in Pug are placed within a pair of regular brackets attached to the end of the element they are assigned to. In this case, html(lang="en") will be processed into <html lang="en">
+html(lang="en")
+
+	//- Much like other HTML/CSS preprocessing languages, Pug nests elements based on their indenting. Because the head element below is indented one level, when it processes the Pug file the output will be <html><head>...</head> ...</html>
+	head
+		title My first preprocessed page!
+		meta(charset="utf-8")
+
+	body 
+		h1 Contact page!
+		p Adding a #[em.super-important change] to the page
+
+		include inc/_nav.pug

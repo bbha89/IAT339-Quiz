@@ -1,0 +1,19 @@
+/*
+	Syntactically Awesome Stylesheets (SASS, https://sass-lang.com/) is a preprocessing language for CSS. It has it's own syntax, meaning you would have to learn another laguage to work with it effectively. There are some advantages to working with a language like SASS though: 
+	- more legible/simpler markup
+	- CSS compression 
+	- reusable code 
+
+// Instead of using the curly brackets {} to contain our properties for a selector's styling, SASS uses indenting. The code below will be processed into *{box-sizing:border-box} in our CSS.
+* 
+	// No ending semicolons ';' are required with property: value statements in SASS 
+	box-sizing: border-box
+
+body
+	font-family: sans-serif
+	margin: 1rem
+a
+	color: pink
+	
+	&:hover, &:focus
+		text-decoration: none

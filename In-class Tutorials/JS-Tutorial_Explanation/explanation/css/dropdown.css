@@ -1,0 +1,88 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 1em;
+}
+
+
+
+/*
+	Setting the grid structure and its responsiveness up
+*/
+.grid {
+	display: grid;
+}
+
+@media (min-width: 27.5rem) {
+
+	.four-column {
+		grid-template-columns: 1fr 1fr;
+	}
+
+}
+
+@media (min-width: 48rem) {
+
+	.four-column {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+}
+
+
+
+
+/*
+	A generic button class to make sure that all buttons follow a similar style and structure.
+*/
+.button {
+	display: block;
+	background-color: #000;
+	color: white;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	padding: 1em;
+	border: 0;
+	width: 100%;
+	text-align: left;
+}
+
+.button:hover, .button:focus {
+	background-color: #CCC;
+}
+
+
+
+/*
+	Specific classes for backgrounds to help distinguish the different buttons.
+*/
+.bg1 {
+	background-color: purple;
+}
+
+.bg2 {
+	background-color: green;
+}
+
+.bg3 {
+	background-color: blue;
+}
+
+.bg4 {
+	background-color: red;
+}
+
+
+
+
+
+/*
+	Here we have added a simple class that will allow us to toggle the visibility of an element on (or off) for the purposes of showing and hiding our menu.
+*/
+.hidden {
+	display: none;
+}
+
+

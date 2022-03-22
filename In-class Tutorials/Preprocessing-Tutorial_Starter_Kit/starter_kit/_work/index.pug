@@ -1,0 +1,21 @@
+//- 
+	Pug (pugjs.org/) is a preprocessing language for HTML. It has it's own syntax, meaning you would have to learn another laguage to work with it effectively. There are some advantages to working with a language like pug though: 
+	- templating ability 
+	- more legible/simpler markup
+	- HTML compression 
+	- error prevention
+	- reusable code 
+
+doctype html
+html(lang="en")
+	head
+		title My first preprocessed page!
+		meta(charset="utf-8")
+
+	body
+		.grid.two-column
+			.col
+				h1 First preprocessed page!
+				p Adding a change to the page
+			.col
+		include inc/_nav.pug

@@ -1,0 +1,118 @@
+.caption-inside {
+	/* allow children to stay inside the parent space */
+	position: relative;
+}
+
+.caption-inside figcaption {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+}
+
+
+@media (min-width: 51.25rem) {
+	.nav-main {
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		z-index: 1;
+	}
+
+	h1 {
+		padding-top: 5rem;
+	}
+}
+
+
+
+
+body {
+	font-family: "Fira", Verdana, sans-serif;
+	margin: 1rem;
+	font-size: 1.25rem;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 2.25rem;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 1.6rem;
+	margin-bottom: 0;
+}
+
+p, ol, ul {
+	max-width: 40rem;
+}
+
+img {
+	height: auto; 
+	max-width: 100%;
+	border-width: 0.1rem;
+	border-style: solid;
+	border-color: black; 
+	display: block;
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+a {
+	color: rgb(200,0,0);
+	transition-property: color;
+	transition-duration: 0.5s;
+}
+
+a:active, a:hover, a:focus {
+	color: rgb(50,0,0); 
+	text-decoration: none;
+}
+
+code, samp {
+	display: block;
+	background-color: rgb(230,230,230);
+	padding: 0.5rem;
+}
+
+.nav-main-item {
+	display: inline-block;
+	color: white;
+	background-color: rgb(250,100,75);
+	font-size: 1.5rem;
+	padding: 0.25rem 0.5rem;
+	text-decoration: none;
+
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+}
+
+.nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
+	color: white;
+	background-color: rgb(50,50,50);
+}
+
+.bg1 {
+	background-color: purple;
+}
+
+.bg2 {
+	background-color: green;
+}
+
+.bg3 {
+	background-color: blue;
+}

@@ -1,0 +1,13 @@
+/* Syntactically Awesome Stylesheets (SASS, https://sass-lang.com/) is a preprocessing language for CSS. It has it's own syntax, meaning you would have to learn another laguage to work with it effectively. There are some advantages to working with a language like SASS though: 
+ * - more legible/simpler markup
+ * - CSS compression 
+ * - reusable code  */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sands-serif;
+  margin: 1rem;
+}

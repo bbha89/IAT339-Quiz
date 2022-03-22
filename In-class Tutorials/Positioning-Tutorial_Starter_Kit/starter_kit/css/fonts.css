@@ -1,0 +1,35 @@
+/* Loading the 'regular' weight */
+@font-face {
+	font-family: 'Fira';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/FiraSans-Book.woff2') format('woff2'), 
+		 url('../fonts/FiraSans-Book.woff') format('woff');
+}
+
+/* Loading the italic style for the 'regular' weight */
+@font-face {
+	font-family: 'Fira';
+	font-weight: normal;
+	font-style: italic;
+	src: url('../fonts/FiraSans-Book-Italic.woff2') format('woff2'), 
+		 url('../fonts/FiraSans-Book-Italic.woff') format('woff');
+}
+
+/* Loading the 'bold' weight */
+@font-face {
+	font-family: 'Fira';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/FiraSans-Medium.woff2') format('woff2'), 
+		 url('../fonts/FiraSans-Medium.woff') format('woff');
+}
+
+/* Loading the italic style for the 'bold' weight */
+@font-face {
+	font-family: 'Fira';
+	font-weight: bold;
+	font-style: italic;
+	src: url('../fonts/FiraSans-Medium-Italic.woff2') format('woff2'), 
+		 url('../fonts/FiraSans-Medium-Italic.woff') format('woff');
+}

@@ -1,0 +1,97 @@
+/*
+	With the asterisk (*) selector, we are specifying that all objects use the border-box model (not the content-box model)
+*/
+* {
+	box-sizing: border-box;
+}
+
+
+
+
+
+/*
+	A reminder that here we are defining our own 'class' which we can then apply repeatedly to our HTML elements. In this case, in our HTML if we apply <... class="grid"> to an element, it will have all the styling applied to it as defined inside of .grid {...} below.
+*/
+.grid {
+	/*
+		By setting the 'display' property to a value of 'grid', we are setting the container to use CSS grid system for its layout.
+	*/
+	display: grid;
+}
+
+
+
+
+
+/*
+	Below the selector we have is specified as '.grid.add-gutters'. This means that to have this styling applied in our HTML, we have to select an element that has the classes of BOTH 'grid' and 'add-gutters'. This might look like the following in our HTML:
+
+	<div class="grid add-gutters"> - This would have the styling below applied to it.
+	<div class="add-gutters"> - This would NOT have the styling below applied to it.
+
+	While we could have our .grid class specify the gutters, we may in some cases want a grid structure that does not included gutters. By having a separate class specifically for adding gutters we can apply (or not) this styling easily in our HTML.
+*/
+.grid.add-gutters {
+	
+	/*
+		To add gutters between the columns and rows of our grid structure we have the 'grid-column-gap' and 'grid-row-gap' properties. These will add space between columns or rows of our grid as you specify. In this case, we are adding 1rem of spacing between columns and 0.25rem of spacing between rows.
+	*/
+	grid-column-gap: 1rem;
+	grid-row-gap: 0.25rem;
+}
+
+
+
+
+
+
+/*
+	Based on resizing the window and watching when the content could re-organize, we can determine when to add media queries (@media) to adjust the page layout accordingly. In this case, we measured that around 820 pixels was a good point at which to switch our two-column content to be placed next to one another. Because we want to ensure that the page responds to changes in font-size (and applies media queries accordingly), we use the base font size of 16 pixels to calculate our rem units in this case: 820/16px = 51.25rem
+
+	The 'min-width' condition for our media query states that when the width of the browser window is at or larger than 51.25rem, apply the specified styling. Any styling that appears in a @media statement will ONLY apply when the condition is met.
+*/
+@media (min-width: 51.25rem) {
+	
+
+	/*
+		We are applying the same styling to both our two and four-column grids as we know at this media query this is enough room for two columns across, but not yet four.
+	*/
+	.grid.two-column, .grid.four-column {
+		/*
+			The CSS Grid system allows us to define both columns and rows for our 'template' to follow. For this we use the 'grid-template-columns' and 'grid-template-rows' properties with the 'fr' unit to assign the structure of our grid. The 'fr' unit refers to a 'fraction'. Because we want a three-column grid we assign the following:
+
+			grid-template-columns: 1fr 1fr; - Here the two values - '1fr 1fr' - indicate that we want two columns, each equal in width - 1 fraction (fr) of 2. The browser will automatically determine what the actual width of these columns are.
+
+			grid-template-rows: auto; - Because we don't necessarily know how many rows our grid structure will be in this case, we are not assigning a specific number of rows to our grid structure.
+		*/
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		
+		/*
+			The 'grid-auto-flow' property allows us to have the browser automatically place items to fill in our grid structure as necessary. In this case by specifying the value of 'row' we are telling the browser to fill-in the rows of our grid and add new rows as necessary.
+		*/
+		grid-auto-flow: row;
+	}
+
+}
+
+
+
+/*
+	In this case, we measured that around 1120 pixels was a good point at which to switch our four-column items to be placed next to one another instead of on top of one another. The calculation in this case is 1120/16px = 70rem
+
+	The 'min-width' condition for our media query states that when the width of the browser window is at or larger than 70rem, apply the specified styling. Any styling that appears in a @media statement will ONLY apply when the condition is met.
+*/
+@media (min-width: 70rem) {
+	
+	.grid.four-column {
+		/*
+			grid-template-columns: 1fr 1fr 1fr 1fr; - Here the four values - '1fr 1fr 1fr 1fr' - indicate that we want four columns, each equal in width - 1 fraction (fr) of 4. The browser will automatically determine what the actual width of these columns are.
+
+			grid-template-rows: auto; - Because we don't necessarily know how many rows our grid structure will be in this case, we are not assigning a specific number of rows to our grid structure.
+		*/
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-auto-flow: row;
+	}
+}

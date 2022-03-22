@@ -1,0 +1,68 @@
+/*
+    THIS IS A COMMENT.
+
+    selector {
+        property: value;
+        property2: valueX;
+    }
+
+
+*/
+
+body {
+    font-family: Helvetica, Verdana, sans-serif;
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+p, ul, ol {
+    max-width: 40rem;
+}
+
+a {
+    color: rgb(200, 0, 0);
+}
+
+a:hover, a:focus {
+    color: rgb(50,0,0);
+    text-decoration: none;
+}
+
+.nav-item {
+    display: inline-block;
+    color: white;
+    background-color: rgb(250, 100, 74);
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    /* transition-property: background-color;
+    transition-duration: 0.75s; */
+    transition: color 0.75s, background-color 0.75s;
+}
+
+.nav-item:hover, .nav-item:focus {
+    color: white;
+    background-color: rgb(50,50,50);
+}
+
+section {
+    margin-top: 10rem;
+    padding-top: 1rem;
+}
