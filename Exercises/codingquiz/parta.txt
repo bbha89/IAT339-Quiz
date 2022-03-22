@@ -1,0 +1,7 @@
+Method 1:
+I would use the display:grid property and use grid-template-column to specify the sizes of each box using percentages to get the correct widths. 25% for box a, 50% for box b, and 25% for box c. in order to get the correct height for each box, I gave each box an id and specified the height using vh which is the view height of the browser window. box a would have 50vh (for 1/2 height), box b 1/4 height, box c 100vh. 
+
+Method 2:
+I would use the position relative and absolute property. The parent container would have the position of relative with 100vh (view height of the browser window). and for each id block child, we give it position absolute so it is positioned relative to its ancestor. We then give block a top: 0, left: 0 so it is at the top left with width 25% (1/4width) and height 50vh (1/2 height), block b height 25vh (1/4 height), 50% width (1/2 width) at top: 0, left: 25% right after block a. Block c height 100vh, width 25% at position top: 0, right: 0 which is after block b and is at the top right.
+
+Part b) positioning using relative and absolute
