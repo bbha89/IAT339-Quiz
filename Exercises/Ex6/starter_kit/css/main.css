@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+#image_box {
+	width: 100%;
+	height: 85vh;
+	border: 1px solid black;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin: 0;
+	padding: 1rem;
+}
+
+p { 
+	margin: 0;
+	padding: 0;
+}
+
+.thumbnail {
+	font-size: 2rem;
+	color: white;
+	text-shadow: 0 0.1rem 0.3rem black;
+	height: 15vh;
+	width: 100%;
+	background-color: black;
+	cursor: pointer;
+	border: 2px solid black;
+	transition: border-color 0.35s, background-color 0.35s;
+}
+
+.thumbnail:hover, .thumbnail:focus {
+	border-color: green;
+	background-color: green;
+}
+
+
+.image_background {
+	background-image: url('../img/torn_wall.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+

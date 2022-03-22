@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+    <title>TechShop</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet"> 
+  </head>
+
+  <body>
+    <!-- header content -->
+    <header class="site-header">
+      <a href="home.html" class="logo">
+        <img src="img/icons/logo_text.png" alt="home page" width="221" height="50">
+      </a>
+
+      <nav class="grid navbar grid-nav">   
+        <a href="home.html" class="navbar-item">Home</a>     
+        <a href="products.html" class="navbar-item">Products</a>
+        <a href="about.html" class="navbar-item">About Us</a>
+        <a href="contact.html" class="navbar-item">Contact Us</a>
+        <a href="cart.html" class="cart-btn">
+          <img src="img/icons/cart.png" alt="shopping cart page" width="64" height="64">
+        </a>
+      </nav>
+    </header>
+    
+    <div>
+      <div class="nav-smallsize" id="menu">
+        <a href="home.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <h1 class="title-details h1-styling">Payment Information</h1>
+    
+    <form action="complete.html" method="post" class="grid grid-payment">
+      <div>
+        <div class="payment-info">
+          <h2 class ="h2-styling">Contact Information</h2>
+          <label for="first-name">First Name:</label>
+          <input id="first-name" type="text" placeholder="first name" required>
+          <label for="last-name">Last Name:</label>
+          <input id="last-name" type="text" placeholder="last name" required>
+          <label for="payment-email">Email Address:</label>
+          <input id="payment-email" type="email" placeholder="user@gmail.com" required>
+          <label for="phone">Phone:</label>
+          <input id="phone" type="text" placeholder="phone number" required>
+        </div>
+        <div class="payment-info">
+          <h2 class ="h2-styling">Shopping Address</h2>
+          <label for="address">Address:</label>
+          <input id="address" type="text" placeholder="address" required>
+          <label for="country">Country:</label>
+          <input id="country" type="text" placeholder="country" required>
+          <label for="province">Province:</label>
+          <input id="province" type="text" placeholder="province" required>
+          <label for="city">City:</label>
+          <input id="city" type="text" placeholder="city" required>
+          <label for="code">Postal Code:</label>
+          <input id="code" type="text" placeholder="postal code" required>
+        </div>
+        <div class="payment-info">
+          <h2 class ="h2-styling">Payment Information</h2>
+          <label for="card-number">Card Number:</label>
+          <input id="card-number" type="text" placeholder="xxxx xxxx xxxx xxxx" required>
+          <label for="card-name">Name on Card:</label>
+          <input id="card-name" type="text" placeholder="card name" required>
+          <label for="expiry">Expiration Date:</label>
+          <input id="expiry" type="text" placeholder="MM/YY" required>
+          <label for="security-code">Security Code:</label>
+          <input id="security-code" type="text" placeholder="xxx" required>
+        </div>
+      </div>
+
+        <div class="total-payment">
+          <h2>Payment Total</h2>
+          <p>Subtotal: $195.98</p>
+          <p>Shipping: $9.99</p>
+          <p>Tax: $29.40</p>
+          <p>Total: $235.37</p>
+          <div>
+              <a href="purchased.html" class="cart-details-styling">Confirm purchase</a>
+          </div>
+        </div>
+    </form>
+
+
+
+    <!-- footer content -->
+    <div class="footer">
+      <div class="footer-content grid grid-footer">
+        <div class="logo-footer">
+          <a href="home.html">
+            <img src="img/icons/logo_textW.png" alt="home page" width="221" height="100" class="img-footer">
+          </a>
+        </div>
+
+        <div>
+          <p class="footer-title">Contact Us</p>
+          <p>13450 102 Ave Unit 110, Surrey, BC V3T 0A3</p>
+          <p>1-800-XXX-XXX</p>
+          <p>techshopbc@gmail.com</p>
+        </div>
+        <div>
+          <p class ="footer-title">Subscribe</p>
+          <form class="account-info">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="user@gmail.com">
+            <button class="button-styling">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div>&copy;2022 TechShop. All rights reserved</div>
+      </div>
+    </div>
+    <script src="js/dropdown.js"></script>
+  </body>
+  
+</html>

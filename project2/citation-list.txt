@@ -1,0 +1,59 @@
+project2
+
+<!-- Citation list -->
+Logo
+https://www.pinterest.com/pin/690387817861669953/ 
+
+https://editor.freelogodesign.org/en/logo/edit/1d834f033ae3400cb0e646fe23a26dae?template=4609351&category=31&companyName=TechShop
+
+Fonts
+https://www.dafontfree.io/avenir-font-free/ 
+https://fonts.google.com/specimen/Inter
+Roboto font https://www.fontsquirrel.com/fonts/roboto?q%5Bterm%5D=roboto&q%5Bsearch_check%5D=Y
+JavaScript
+https://andrewh.ca/teaches/web_design_and_development/#code-tutorial-files
+
+centering items using position absolute and transform properties: https://www.freecodecamp.org/news/how-to-center-an-image-in-css/
+
+Images
+shopping cart icon: https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/344/external-shopping-cart-interface-kiranshastry-lineal-kiranshastry-1.png
+
+razer blade 15: https://assets2.razerzone.com/images/pnx.assets/5fc6fc6bd07e0eabfb8193aa29a5d20a/new-razer-blade-15-2022-hero-mobile.jpg
+
+razer iskur: https://assets2.razerzone.com/images/pnx.assets/23cc06d7a395f80a4d4aa78711fe1afe/gaming-chairs-holiday-gift-guide-mobile.jpg
+
+mouse banner: https://cwsmgmt.corsair.com/hybris/tlc/mice/NIGHTSWORD_RGB_32.jpg
+
+m55 mouse: https://www.corsair.com/medias/sys_master/images/images/h8c/h70/9236962738206/-CH-9308011-NA-Gallery-M55-RGB-PRO-BLACK-01.png
+
+deathadder v2 mouse: https://www.amazon.ca/Razer-DeathAdder-Elite-Mechanical-Ergonomic/dp/B01LXC1QL0
+
+wireless microsoft mouse: https://www.amazon.ca/Microsoft-Wireless-Mobile-Mouse-1850/dp/B00KLTEA0G/ref=asc_df_B00KLTEA0G/?tag=googleshopc0c-20&linkCode=df0&hvadid=293004044609&hvpos=&hvnetw=g&hvrand=7565042734244993879&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001970&hvtargid=pla-435626560250&psc=1
+
+gpro mouse: https://m.media-amazon.com/images/I/51ySu55JzAL._AC_UL320_.jpg
+
+keyboard banner: https://cougargaming.com/_cgrwdr_/wwdpp/wp-content/uploads/2019/08/VANTAR-MX-banner_2480.jpg
+
+ornata2 keyboard: https://m.media-amazon.com/images/I/81AJ65ztk8L._AC_SL1500_.jpg
+
+logitech prox: https://resource.logitechg.com/w_692,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-keyboard/pro-x-keyboard-gallery-1.png?v=1\
+
+blackwidow v3 keyboard: https://pcpartpicker.com/product/2pKKHx/razer-blackwidow-v3-rgb-wired-gaming-keyboard-rz03-03490200-r3u1
+
+k55 keyboard: https://www.corsair.com/ca/en/Categories/Products/Gaming-Keyboards/Standard-Gaming-Keyboards/K55-RGB-PRO-Gaming-Keyboard/p/CH-9226765-NA
+
+monitor banner: https://cougargaming.com/_cgrwdr_/wwdpp/wp-content/uploads/2019/08/VANTAR-MX-banner_2480.jpg
+
+corsair monitor: https://www.corsair.com/medias/sys_master/images/images/hd5/had/9884828893214/CM-9020001-NA/Gallery/XENEON_32QHD165_Gaming_Monitor_RENDER_01/-CM-9020001-NA-Gallery-XENEON-32QHD165-Gaming-Monitor-RENDER-01.png_1200Wx1200H
+
+aoc monitor: https://pcpartpicker.com/product/Q9CFf7/aoc-24g2-238-1920x1080-144-hz-monitor-24g2
+
+msi monitor: https://m.media-amazon.com/images/I/61ANdv+2OxL._AC_SL1024_.jpg
+
+kraken x: https://m.media-amazon.com/images/I/61QIMDB3YTL._AC_SL1500_.jpg
+
+kraken mousepad: https://ccimg.canadacomputers.com/Products/600x600/276/365/119912/70268.jpg
+
+corsair fan: https://m.media-amazon.com/images/I/71vnzhIJqtL._AC_SL1500_.jpg
+
+tick icon: https://www.flaticon.com/free-icons/check-mark

@@ -1,0 +1,144 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+/* 1. Default font */
+/* https://stackoverflow.com/questions/18118530/using-css-to-set-default-font/18118569 */
+* {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 2. section spacing */
+section {
+  margin-bottom: 5rem;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  border: 5px solid rgb(190, 36, 36);
+}
+
+/* https://andrewh.ca/teaches/web_design_and_development/lectures/02/#specificity */
+/* 3. different hover and focus state styling to in-text link */
+a {
+  color: rgb(200,0,0);
+}
+
+a:hover, a:focus {
+  color:rgb(100, 35, 223);
+  text-decoration: none;
+}
+
+/* https://www.w3schools.com/howto/howto_css_border_image.asp */
+/* 4. different hover and focus state styling to image as a link*/
+a:hover img, a:focus img{
+  border: 5px solid rgb(99, 43, 230);
+}
+
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+h2 {
+  margin-top: 6rem;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+/* 5. shorten default width of p element */
+p, ul {
+  margin-top: 0;
+  max-width: 30rem;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* https://learn.shayhowe.com/html-css/building-forms/ */
+/* 6. Style input and label using guide */
+.account_info {
+  padding: 20px 20px 20px 20px;
+}
+
+.account_info label {
+  color: #6cb33d;
+  display: block;
+  font-weight: bold;
+}
+
+.account_info input {
+  border: 1px solid #1b3097;
+  color: #24c93f;
+  padding: 6px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.account_info input {
+  border: 1px solid #1b3097;
+  color: #24c93f;
+  padding: 6px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.account_info input:hover, .account_info input:focus {
+  background-color: yellow;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(50,50,50);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(200,200,200);
+}
+
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/

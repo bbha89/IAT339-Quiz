@@ -1,0 +1,26 @@
+/* Loading the 'regular' weight */
+@font-face {
+	font-family: "Roboto";
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/roboto-regular.woff2') format('woff2'), 
+		 url('../fonts/roboto-regular.woff') format('woff');
+}
+
+/* Loading the 'light' weight */
+@font-face {
+	font-family: "Inter-Light";
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Inter-Light.woff2') format('woff2'),
+		 url('../fonts/Inter-Light.woff') format('woff');
+}
+
+/* Loading the 'bold' font */
+@font-face {
+	font-family: "Metropolis-SemiBold";
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Metropolis-SemiBold.woff2') format('woff2'),
+		 url('../fonts/Metropolis-SemiBold.woff') format('woff');
+}

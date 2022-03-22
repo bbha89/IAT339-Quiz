@@ -1,0 +1,62 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+/* set every element to use the border-box model */
+* {
+	box-sizing: border-box;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.nav-item {
+  color: white;
+  background-color: #343239;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  text-align: center;
+}
+
+nav a:hover, nav a:focus {
+  background-color: #f03d33;
+}
+
+/* Navbar */
+.grid_nav {
+  display: grid;
+}
+
+.navspace {
+	grid-column-gap: 1rem;
+	grid-row-gap: 0.25rem;
+}
+
+/* 320/16 = 20rem */
+@media (min-width: 20rem) {
+  .grid_nav.grid_col {
+    grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-auto-flow: row;
+  }
+}
+
+/* 900/16 =  56.25rem*/
+@media (min-width: 56.25rem) {
+  .grid_nav.grid_col {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-auto-flow: row;
+  }
+}
+
+

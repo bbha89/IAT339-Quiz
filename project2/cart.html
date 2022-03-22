@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+    <title>TechShop</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet"> 
+  </head>
+
+  <body>
+    <!-- header content -->
+    <header class="site-header">
+      <a href="home.html" class="logo">
+        <img src="img/icons/logo_text.png" alt="home page" width="221" height="50">
+      </a>
+
+      <nav class="grid navbar grid-nav">   
+        <a href="home.html" class="navbar-item">Home</a>     
+        <a href="products.html" class="navbar-item">Products</a>
+        <a href="about.html" class="navbar-item">About Us</a>
+        <a href="contact.html" class="navbar-item">Contact Us</a>
+        <a href="cart.html" class="cart-btn">
+          <img src="img/icons/cart.png" alt="shopping cart page" width="64" height="64">
+        </a>
+      </nav>
+    </header>
+    
+    <div>
+      <div class="nav-smallsize" id="menu">
+        <a href="home.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <h1 class="title-details h1-styling">Shopping Cart</h1>
+    
+    <div class="grid grid-summary">
+      <div>
+        <div class="grid grid-cart">
+
+          <div class="img-cart-container">
+            <img src="img/mice/mouse_m55.png" alt="m55 mouse" width="600" height="600" class="img-cart-styling">
+          </div>
+          <div class="cart-text-container">
+            <div class="cart-text">
+              <h1 class="h1-cart-styling">Corsair M55 RGB Pro Ambidextrous Multi-Grip Gaming Mouse</h1>
+              <p class="price-cart-styling">$55.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cart">
+
+          <div class="img-cart-container">
+            <img src="img/keyboards/keyboard_blackwidow_v3.png" alt="blackwidow v3" width="600" height="600" class="img-cart-styling">
+          </div>
+          <div class="cart-text-container">
+            <div class="cart-text">
+              <h1 class="h1-cart-styling">Razer BlackWidow V3 RGB Wired Gaming Keyboard</h1>
+              <p class="price-cart-styling">$139.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div-cart-order">
+        <h2>Order Summary</h2>
+        <p>Subtotal: $195.98</p>
+        <p>Shipping: TBD</p>
+        <p>Tax: TBD</p>
+        <div>
+          <a href="payment.html" class="cart-details-styling">Proceed to payment</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- footer content -->
+    <div class="footer">
+      <div class="footer-content grid grid-footer">
+        <div class="logo-footer">
+          <a href="home.html">
+            <img src="img/icons/logo_textW.png" alt="home page" width="221" height="100" class="img-footer">
+          </a>
+        </div>
+
+        <div>
+          <p class="footer-title">Contact Us</p>
+          <p>13450 102 Ave Unit 110, Surrey, BC V3T 0A3</p>
+          <p>1-800-XXX-XXX</p>
+          <p>techshopbc@gmail.com</p>
+        </div>
+        <div>
+          <p class ="footer-title">Subscribe</p>
+          <form class="account-info">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="user@gmail.com">
+            <button class="button-styling">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div>&copy;2022 TechShop. All rights reserved</div>
+      </div>
+    </div>
+    <script src="js/dropdown.js"></script>
+  </body>
+</html>
